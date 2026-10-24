@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Srinath Ranganathan — Data Engineer · Data Scientist · AI</title>
-<meta name="description" content="Srinath Ranganathan — Data & AI engineer building data pipelines, ML systems and BI automation with Python, SQL, PySpark and Databricks. Final-year AI & Data Science engineer." />
+<meta name="description" content="Srinath Ranganathan — Data & AI engineer building data pipelines, ML systems and BI automation with Python, SQL, PySpark and Databricks. AI & Data Science graduate." />
 <meta name="author" content="Srinath Ranganathan" />
 <meta name="theme-color" content="#060912" />
 
@@ -24,7 +24,34 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
 
+
 <style>
+.company-link {
+  color: var(--ink);
+  transition: color 0.2s ease;
+}
+
+.company-link:hover {
+  color: var(--cyan);
+}
+/* Place the experience bar neatly between About and Skills */
+#about {
+  padding-bottom: 2.5rem;
+}
+
+.experience-overview {
+  padding: 0 0 2.5rem;
+}
+
+.exp-tenure {
+  width: min(100%, 760px);
+  margin: 0 auto;
+}
+
+#skills {
+  padding-top: 2.5rem;
+}
+
 /* ============================================================
    TOKENS
    ============================================================ */
@@ -56,7 +83,83 @@
   --ff-body:   "Inter", system-ui, -apple-system, sans-serif;
   --ff-mono:   "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
 }
+/* COMPACT PROFESSIONAL EXPERIENCE BAR */
+.exp-tenure {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  margin: 1rem 0 0;
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--line);
+  border-radius: var(--r-sm);
 
+  background: linear-gradient(
+    135deg,
+    rgba(37, 224, 229, 0.045),
+    rgba(155, 124, 255, 0.045)
+  );
+}
+
+.exp-tenure-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin-bottom: 0.8rem;
+}
+
+.exp-tenure-value {
+  margin-top: 0.25rem;
+  font-family: var(--ff-disp);
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.exp-track {
+  height: 6px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 999px;
+  background: rgba(132, 156, 200, 0.15);
+}
+
+.exp-track-fill {
+  height: 100%;
+  width: 0%;
+  border-radius: inherit;
+  background: var(--grad);
+  transition: width 0.8s ease;
+}
+
+.exp-tenure-foot {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  color: var(--muted);
+  font-family: var(--ff-mono);
+  font-size: 0.64rem;
+}
+
+@media (max-width: 520px) {
+  .exp-tenure {
+    width: 100%;
+    margin-left: 0;
+    padding: 0.9rem;
+  }
+
+  .exp-tenure-value {
+    font-size: 1.3rem;
+  }
+
+  .exp-tenure-foot {
+    font-size: 0.58rem;
+  }
+}
 /* ============================================================
    RESET / BASE
    ============================================================ */
@@ -596,13 +699,13 @@ body::after{
   <div class="wrap hero-inner">
     <div class="hero-grid">
       <div class="hero-text">
-        <span class="status"><span class="dot"></span> Available for Data &amp; AI roles · 2025</span>
+        <span class="status"><span class="dot"></span> Available for Data &amp; AI roles · 2026</span>
         <h1>Srinath<br>Ranganathan</h1>
         <div class="role-line" aria-label="I engineer data pipelines, ML systems, AI prototypes and BI automations">
           I engineer <span class="grad-type"><span class="type" id="typed"></span></span><span class="caret" aria-hidden="true"></span>
         </div>
         <p class="lead">
-          Final-year <b>AI &amp; Data Science</b> engineer with production experience building
+          <b>AI &amp; Data Science</b> engineer with production experience building
           <b>data pipelines</b>, <b>ML proof-of-concepts</b> and <b>BI automation</b> across the
           pharmaceutical commercial domain — powered by Python, SQL, PySpark and Databricks.
         </p>
@@ -634,7 +737,7 @@ body::after{
         <div class="term-body">
 <span class="ln"><span class="c-key">class</span> <span class="c-fn">DataEngineer</span>:</span>
 <span class="ln">    role <span class="c-key">=</span> <span class="c-str">"Data · ML · AI"</span></span>
-<span class="ln">    base <span class="c-key">=</span> <span class="c-str">"Coimbatore, IN"</span></span>
+<span class="ln">    base <span class="c-key">=</span> <span class="c-str">"Pune, IN"</span></span>
 <span class="ln">    stack <span class="c-key">=</span> [<span class="c-str">"Python"</span>, <span class="c-str">"SQL"</span>, <span class="c-str">"PySpark"</span>]</span>
 <span class="ln">    cloud <span class="c-key">=</span> <span class="c-str">"AWS"</span> <span class="c-key">+</span> <span class="c-str">"Databricks"</span></span>
 <span class="ln"></span>
@@ -686,7 +789,7 @@ body::after{
           </div>
           <div class="fact">
             <div class="k"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Based in</div>
-            <div class="v">Coimbatore, TN<small>India · remote-ready</small></div>
+            <div class="v">Pune, Maharashtra<small>India · remote-ready</small></div>
           </div>
         </div>
       </div>
@@ -699,7 +802,7 @@ body::after{
           <div class="uni">KGiSL Institute of Technology · Anna University</div>
           <div class="meta">
             <div><div class="mk">Duration</div><div class="mv" style="font-size:1rem">2021 – 2025</div></div>
-            <div><div class="mk">CGPA</div><div class="mv amber">7.8</div></div>
+            <div><div class="mk">CGPA</div><div class="mv">7.7</div></div>
             <div><div class="mk">HSC</div><div class="mv">87%</div></div>
             <div><div class="mk">SSLC</div><div class="mv">81%</div></div>
           </div>
@@ -714,11 +817,49 @@ body::after{
             data people trust the source, not the chart.
           </p>
         </div>
+<!-- PROFESSIONAL EXPERIENCE DURATION -->
+<div class="exp-tenure">
+  <div class="exp-tenure-top">
+    <div>
+      <div class="exp-tenure-label">PROFESSIONAL EXPERIENCE</div>
+      <div class="exp-tenure-value" id="experienceDuration">
+        Calculating...
+      </div>
+    </div>
+
+    <a
+  class="exp-tenure-since"
+  href="https://circulants.com/"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Visit the Circulants website"
+>
+  <span>Circulants Pvt. Ltd. ↗</span>
+  <span class="exp-tenure-date">Since February 2025</span>
+</a>
+
+  <div
+    class="exp-track"
+    id="experienceProgress"
+    role="progressbar"
+    aria-label="Professional experience on a five-year visual scale"
+    aria-valuemin="0"
+    aria-valuemax="60"
+    aria-valuenow="0"
+  >
+    <div class="exp-track-fill" id="experienceProgressFill"></div>
+  </div>
+
+  <div class="exp-tenure-foot">
+    <span>Feb 2025</span>
+    <span id="experienceProgressLabel">0% of 5-year scale</span>
+    <span>5 years</span>
+  </div>
+</div>
       </div>
     </div>
   </div>
 </section>
-
 <!-- ============ SKILLS + SPHERE ============ -->
 <section class="section" id="skills">
   <div class="wrap">
@@ -775,7 +916,7 @@ body::after{
           </div>
           <div class="chips">
             <span class="chip key">TensorFlow</span><span class="chip key">Scikit-learn</span><span class="chip key">Keras</span>
-            <span class="chip">Statsmodels</span><span class="chip">YOLOv8</span><span class="chip">CLIP</span>
+            <span class="chip">Statsmodels</span><span class="chip">Spark MLlib</span><span class="chip">YOLOv8</span><span class="chip">CLIP</span>
           </div>
         </div>
 
@@ -785,7 +926,7 @@ body::after{
             <h3>Data Engineering &amp; Cloud</h3>
           </div>
           <div class="chips">
-            <span class="chip key">Databricks</span><span class="chip key">Airflow</span><span class="chip key">AWS</span>
+            <span class="chip key">Databricks</span><span class="chip key">Veeva Nitro</span><span class="chip key">AWS</span>
             <span class="chip key">MLflow</span><span class="chip">Git</span><span class="chip">Kafka</span>
           </div>
         </div>
@@ -796,7 +937,7 @@ body::after{
             <h3>Databases</h3>
           </div>
           <div class="chips">
-            <span class="chip">MongoDB</span><span class="chip">Cassandra</span><span class="chip">MySQL</span><span class="chip">SQL Server</span>
+            <span class="chip key">Redshift</span><span class="chip key">SQL Server</span><span class="chip">MongoDB</span><span class="chip">Cassandra</span><span class="chip">MySQL</span>
           </div>
         </div>
 
@@ -806,7 +947,7 @@ body::after{
             <h3>Automation &amp; Tooling</h3>
           </div>
           <div class="chips">
-            <span class="chip">BeautifulSoup</span><span class="chip">Selenium</span><span class="chip">Regex</span>
+            <span class="chip key">Airflow</span><span class="chip">BeautifulSoup</span><span class="chip">Selenium</span><span class="chip">Regex</span>
             <span class="chip">DVC</span><span class="chip">DagsHub</span><span class="chip">FAISS</span>
           </div>
         </div>
@@ -814,6 +955,7 @@ body::after{
     </div>
   </div>
 </section>
+
 
 <!-- ============ EXPERIENCE ============ -->
 <section class="section" id="experience">
@@ -823,18 +965,31 @@ body::after{
       <h2 class="sec-title">Shipping data systems, <span class="gradient-text">end to end</span>.</h2>
       <p class="exp-note">// engagements across the pharmaceutical commercial data domain</p>
     </div>
+	
 
     <div class="timeline">
       <div class="tl-item reveal">
         <span class="tl-node" aria-hidden="true"></span>
         <div class="tl-card">
-          <h3>Databricks Data Warehouse Migration</h3>
+          <h3>Databricks Data Lake Migration</h3>
           <div class="domain">Data Engineering · Pipeline Migration</div>
           <ul>
-            <li>Drove end-to-end migration of a <b>SQL Server</b> warehouse to Databricks, ingesting from SFTP files and REST APIs with PySpark and Spark SQL.</li>
-            <li>Automated workflows with Databricks Jobs and built <b>logging &amp; validation frameworks</b> for reliable processing.</li>
+            <li>Drove end-to-end migration of a <b>SQL Server</b> warehouse to Databricks, ingesting from SFTP files and REST APIs with Python and PySpark.</li>
+            <li>Automated workflows with Databricks Jobs and built <b>logging &amp; validation frameworks</b> for reliable processing, Which is a metadata driven data warehouse.</li>
           </ul>
           <div class="tag-row"><span class="ttag">Databricks</span><span class="ttag">PySpark</span><span class="ttag">Spark SQL</span><span class="ttag">REST API</span><span class="ttag">SFTP</span></div>
+        </div>
+      </div>
+<div class="tl-item reveal">
+        <span class="tl-node" aria-hidden="true"></span>
+        <div class="tl-card">
+          <h3>Veeva Nitro Data Warehouse Migration</h3>
+          <div class="domain">Data Engineering · Pipeline Migration</div>
+          <ul>
+            <li>Drove end-to-end migration of a <b>SQL Server</b> warehouse to Veeva Nitro, ingesting from SFTP files and REST APIs .</li>
+            <li>Automated workflows with Nitro Admin Console Jobs and built <b>logging &amp; validation frameworks</b> for reliable processing.</li>
+          </ul>
+          <div class="tag-row"><span class="ttag">Veeva Nitro</span><span class="ttag">Nitro SDK</span><span class="ttag">Nitro CLI</span><span class="ttag">Tableau Rest API Automation</span><span class="ttag">SFTP</span></div>
         </div>
       </div>
 
@@ -1062,7 +1217,7 @@ body::after{
 <footer class="footer">
   <div class="wrap">
     <div class="fbrand">Srinath<b>.</b>dev</div>
-    <div class="fmeta">© 2025 Srinath Ranganathan · Built with data in mind</div>
+    <div class="fmeta">© 2026 Srinath Ranganathan · Built with data in mind</div>
     <a href="#top" class="top-link">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
       Back to top
@@ -1238,7 +1393,7 @@ body::after{
 
     // [label, isPrimary]
     var skills = [
-      ['Python',1],['SQL',1],['PySpark',1],['Databricks',1],['Spark',1],['Pandas',1],
+      ['Python',1],['SQL',1],['PySpark',1],['Databricks',1],['Veeva Nitro',1],['Redshift',1],['Spark',1],['Pandas',1],
       ['TensorFlow',1],['Scikit-learn',1],['Keras',1],['Tableau',1],['Power BI',1],
       ['Airflow',1],['AWS',1],['MLflow',1],
       ['NumPy',0],['Matplotlib',0],['Seaborn',0],['Plotly',0],['Statsmodels',0],
@@ -1384,6 +1539,75 @@ body::after{
     else { start(); }
   })();
 
+})();
+</script>
+
+<script>
+(function () {
+  const startDate = new Date(2025, 1, 1);
+  // February 1, 2025. JavaScript months are zero-based.
+
+  const durationEl = document.getElementById("experienceDuration");
+  const fillEl = document.getElementById("experienceProgressFill");
+  const progressEl = document.getElementById("experienceProgress");
+  const labelEl = document.getElementById("experienceProgressLabel");
+
+  if (!durationEl || !fillEl || !progressEl || !labelEl) {
+    return;
+  }
+
+  function updateExperience() {
+    const now = new Date();
+
+    let months =
+      (now.getFullYear() - startDate.getFullYear()) * 12 +
+      (now.getMonth() - startDate.getMonth());
+
+    if (now.getDate() < startDate.getDate()) {
+      months--;
+    }
+
+    months = Math.max(0, months);
+
+    const years = Math.floor(months / 12);
+    const remainingMonths = months % 12;
+
+    const durationParts = [];
+
+    if (years > 0) {
+      durationParts.push(
+        years + (years === 1 ? " year" : " years")
+      );
+    }
+
+    if (remainingMonths > 0 || years === 0) {
+      durationParts.push(
+        remainingMonths +
+        (remainingMonths === 1 ? " month" : " months")
+      );
+    }
+
+    durationEl.textContent = durationParts.join(" ");
+
+    // Five-year scale: 60 months = 100%.
+    const displayedMonths = Math.min(months, 60);
+    const percentage = (displayedMonths / 60) * 100;
+
+    fillEl.style.width = percentage + "%";
+
+    progressEl.setAttribute(
+      "aria-valuenow",
+      String(displayedMonths)
+    );
+
+    labelEl.textContent =
+      Math.round(percentage) + "% of 5-year scale";
+  }
+
+  updateExperience();
+
+  // Refresh while the page remains open.
+  setInterval(updateExperience, 24 * 60 * 60 * 1000);
 })();
 </script>
 </body>
